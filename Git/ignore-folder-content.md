@@ -1,0 +1,1 @@
+To ignore contents of an specific folder, create a `.gitignore` file in that folder and set `*` as its content. All files in that folder will be ignored.
