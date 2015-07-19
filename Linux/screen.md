@@ -14,4 +14,6 @@ $ screen -d -R _sessionname_
 
 This will detach the session and reattach to the session in the current context.
 
+When inside an screen, you might want to detach from the screen, but the screen remain open. In that case you can use `Ctrl-a d`.
+
 To get more help and information about screen, don't forget `man screen` and `Ctrl-A ?`.
