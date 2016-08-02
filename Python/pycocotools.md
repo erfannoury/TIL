@@ -42,7 +42,7 @@ change `malloc(sizeof(<type>)*<const>)` to `(<type>*)malloc(sizeof(<type>)*<cons
         language='c++',
         sources=['../common/maskApi.cc', 'pycocotools/_mask.pyx'],
         include_dirs = [np.get_include(), '../common'],
-        extra_compile_args=extrac_compiler_args,
+        extra_compile_args=extra_compile_args,
     )
     ```
     
