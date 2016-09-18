@@ -18,4 +18,6 @@ When inside an screen, you might want to detach from the screen, but the screen 
 
 To kill an screen, when inside it, use `Ctrl-A k` and type `y`.
 
+To scroll the output of the screen (specially after you've re-attached a screen and you want to view past content on the screen) use `Ctrl-A [`.
+
 To get more help and information about screen, don't forget `man screen` and `Ctrl-A ?`.
