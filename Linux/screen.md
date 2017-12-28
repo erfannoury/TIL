@@ -21,3 +21,14 @@ To kill an screen, when inside it, use `Ctrl-A k` and type `y`.
 To scroll the output of the screen (specially after you've re-attached a screen and you want to view past content on the screen) use `Ctrl-A [`.
 
 To get more help and information about screen, don't forget `man screen` and `Ctrl-A ?`.
+
+## Move a running process to screen
+Source: I first saw this mentioned in [this tweet](https://twitter.com/TimMedin/status/946437434933501953) which links to [this Linkedin article](https://www.linkedin.com/pulse/move-running-process-screen-bruce-werdschinski/).
+
+Steps:
+1. `Ctrl + Z` to suspend the process
+2. `$ bg` to continue running the process in the background
+3. `$ disown %1` to disown the process
+4. `$ screen -S <screen name>`
+5. `$ pgrep <process name>` to find the PID of the process
+6. `$ reptyr <pid>` to take over the process
