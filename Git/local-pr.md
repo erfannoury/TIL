@@ -1,0 +1,1 @@
+Imagine that you have cloned a repository from Github. To checkout a Pull Request (PR) and change the code to be at the final state of that PR (before it has been merged), you can follow [this guide](https://help.github.com/articles/checking-out-pull-requests-locally/).
