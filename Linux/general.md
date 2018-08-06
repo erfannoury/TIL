@@ -11,3 +11,14 @@ hello0 hello1 hello2
 
 $ wget https://someplace.com/data_train_{0..10}.zip
 ```
+
+----
+
+When trying to move a large number of files using the `mv` command, it can fail, giving a "too many arguments" error. To mitigate this issue, `find` command can be used.
+```bash
+# From within the folder that contains a large number of files.
+$ find . -name "*" -maxdepth 1 -exec mv -t <target folder> {} +
+```
+Note: instead of `"*"` wildcard, a restrictive one like `"*.jpg"` can also be used.
+
+[Source](https://unix.stackexchange.com/a/102855)
