@@ -23,7 +23,7 @@ Use `p` to list the partitions and after making sure that everything is correct,
 
 5.
 ```
-$ sudo reboo
+$ sudo reboot
 ```
 
 6. The final command is
