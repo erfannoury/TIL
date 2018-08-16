@@ -15,3 +15,19 @@ import matplotlib
 matplotlib.use('agg')
 ```
 [Source](https://stackoverflow.com/a/35737196/5069650)
+
+----
+
+To display images sequentially on the desktop without the need to manually close the display windows, use the following line:
+```python
+interval = 0.1  # in seconds
+for img in images:
+    # ... some codes
+    plt.imshow(img)
+    
+    plt.show(block=False)
+    plt.pause(interval)
+    plt.close()
+```
+
+[Source](https://stackoverflow.com/questions/40395659/view-and-then-close-the-figure-automatically-in-matplotlib#comment68078694_40395799)
