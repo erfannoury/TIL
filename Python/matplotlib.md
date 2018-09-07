@@ -31,3 +31,6 @@ for img in images:
 ```
 
 [Source](https://stackoverflow.com/questions/40395659/view-and-then-close-the-figure-automatically-in-matplotlib#comment68078694_40395799)
+
+----
+To solve the `DLL Error` when importing `matplotlib` (specifically this error happens when importing `ft2font` from `matplotlib`) first uninstall the matplotlib installed using conda (`conda uninstall matplotlib`) and then install it using pip (`pip install matplotlib`). Also before installing with pip, make sure to remove matplotlib's folder from `site-packages`.
