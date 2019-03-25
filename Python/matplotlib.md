@@ -34,3 +34,10 @@ for img in images:
 
 ----
 To solve the `DLL Error` when importing `matplotlib` (specifically this error happens when importing `ft2font` from `matplotlib`) first uninstall the matplotlib installed using conda (`conda uninstall matplotlib`) and then install it using pip (`pip install matplotlib`). Also before installing with pip, make sure to remove matplotlib's folder from `site-packages`.
+
+----
+
+If you are getting the following error or something similar when using `animation`, uninstall the `ffmpeg` installed by conda and use the one installed to the system.
+```
+ValueError: Invalid file object: <_io.BufferedReader name=31>
+```
