@@ -29,3 +29,15 @@ Host <hostname>
   AddKeysToAgent
 ```
 I don't know what the three last options are.
+
+----
+
+## SSH Port Forwarding
+
+You can use the following syntax to forward a remote port to a local port (e.g. for accessing Jupyter Notebook instance running on the remote server):
+
+```bash
+$ ssh -L <remote_port>:localhost:<local_port> <remote server>
+```
+
+[Source](https://michaelgoerz.net/notes/accessing-a-jupyter-notebook-server-through-reverse-port-forwarding.html)
